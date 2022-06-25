@@ -20,7 +20,7 @@ if ($find -eq $null) {
     $client = New-Object System.Net.WebClient
     $client.DownloadFile($link, $tmp)
 }
-$arguments = "/i $tmp /qn VANTA_KEY=""cv9uv6y2gh491hydph0fh59qxe5u634fmj5t11qcwtpdnxh3qykg"" VANTA_OWNER_EMAIl=$mail" 
+$arguments = "/i $tmp /qn VANTA_KEY=""token"" VANTA_OWNER_EMAIl=$mail" 
 
 Start-Process msiexec.exe -ArgumentList $arguments -Wait
 Start-Sleep -s 10
