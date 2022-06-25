@@ -10,7 +10,7 @@ if ([string]::IsNullOrEmpty($mail)) {
 }
 else {
 $file = 'Vanta.msi'
-$link = "https://app.vanta.com/osquery/download/windows"
+$link = "Link"
 $soft_name = 'vanta.msi'
 $find = Get-WmiObject -Class Win32_Product -Filter "Name = `'$soft_name`'"
 }
